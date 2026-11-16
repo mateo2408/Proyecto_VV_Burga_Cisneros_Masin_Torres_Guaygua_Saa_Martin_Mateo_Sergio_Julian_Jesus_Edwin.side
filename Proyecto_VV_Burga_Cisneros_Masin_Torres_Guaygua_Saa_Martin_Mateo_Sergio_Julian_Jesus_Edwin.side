@@ -1,0 +1,350 @@
+{
+  "id": "8349f990-e6eb-4dd2-851a-727c0d5e8ac6",
+  "version": "2.0",
+  "name": "Proyecto_VV_Burga_Cisneros_Masin_Torres_Guaygua_Saa_Martin_Mateo_Sergio_Julian_Jesus_Edwin",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "f133e214-5a24-4e2f-8e32-70b61692e0ef",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "0f5f7fd5-e274-4906-bd97-837932e20cad",
+    "name": "CP01_Login_Exitoso",
+    "commands": [{
+      "id": "037f578d-cf17-41e3-b5df-dcf7cfb9a1fe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fd5c5d9-cc79-419b-854a-d0b690599a5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a6c2fd9-d406-4f95-95e5-072954804a08",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "841e7935-9743-4722-88d8-42863e8041f8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"username\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"standard_user\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": "Running 'CP01_Login_Exitoso'\\n22:17:11\\n1.open on / OK\\n22:17:12\\n2.setWindowSize on 1206x776 OK\\n22:17:12\\n3.click on css=*[data-test=\"username\"] OK\\n22:17:12\\n4.var el = document.querySelector('[data-test=\"username\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"standard_user\"); el.dispatchEvent(new Event('input', { bubbles: true })); on css=*[data-test=\"username\"] Failed:\\n22:17:12\\nUnknown command var el = document.querySelector('[data-test=\"username\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"standard_user\"); el.dispatchEvent(new Event('input', { bubbles: true }));\\n'CP01_Login_Exitoso' ended with 1 error(s)"
+    }, {
+      "id": "bc29c103-5d5c-49b0-afef-7f3d9bd16fb2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"password\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"secret_sauce\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": "secret_sauce"
+    }, {
+      "id": "b8914963-ea81-449e-ac62-20106b955856",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88218974-eece-433c-a74e-3a1ab0268739",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=*[data-test=\"title\"]",
+      "targets": [
+        ["css=*[data-test=\"secondary-header\"]", "css:data-attr"],
+        ["css=.header_secondary_container", "css:finder"],
+        ["xpath=//header[@id='header_container']/div[2]", "xpath:idRelative"],
+        ["xpath=//header/div[2]", "xpath:position"]
+      ],
+      "value": "Products"
+    }]
+  }, {
+    "id": "e351ca4c-e966-4fc4-8795-d66aea874b12",
+    "name": "CP02_Login_Fallido",
+    "commands": [{
+      "id": "6d6d1465-bc65-4127-9f72-4cefa14e9fb9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac7fd5b2-f467-496a-b185-a84230addb58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38520b01-0c29-4d40-853c-78bbdc8cc616",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3033ee79-9ea4-40cd-8688-b59d6457a4bb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"username\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"usuario_invalido\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adf4d655-deb3-49be-a443-ed2619827224",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"password\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"clave_mala\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ac50cf5-4e10-4999-a2b2-4cf112fa07fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d546eb4-f490-4540-ba54-8682afed7a2f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [
+        ["css=*[data-test=\"error\"]", "css:data-attr"],
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Epic sadface: Username and password do not match any user in this service')]", "xpath:innerText"]
+      ],
+      "value": "Epic sadface: Username and password do not match any user in this service"
+    }]
+  }, {
+    "id": "a5d013ee-5053-44b2-b4a3-a009982802b6",
+    "name": "PC03_Elementos_Dinamicos",
+    "commands": [{
+      "id": "03ab9af0-5999-437a-aad7-2e655c99aed7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "322cba01-1b6b-4608-b655-b30b22b3f5a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1206x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f5a382d-42cd-4665-92ec-cc6e138e9336",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce77683b-cb37-4161-830b-613ed4050fd4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"username\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"standard_user\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11f8b483-29f5-4ce2-91e7-764e8512e83c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var el = document.querySelector('[data-test=\"password\"]'); var setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, \"value\").set; setter.call(el, \"secret_sauce\"); el.dispatchEvent(new Event('input', { bubbles: true }));",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b10dfe1-b512-413f-935b-111de22fbfe2",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "622e7cf8-ee61-4021-85de-e2f3717a6270",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "875c2537-199f-4d39-88f9-a4d02a5b98a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b75517c-5ec3-4bc2-975c-134f82f48aec",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66555c49-18bf-4b01-a421-c5a72dd873de",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8fc72a7-6410-4f11-b94f-7c5cc6de8b03",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"dynamic-catalog-sidebar-link\"]",
+      "targets": [
+        ["css=*[data-test=\"dynamic-catalog-sidebar-link\"]", "css:data-attr"],
+        ["id=dynamic_catalog_sidebar_link", "id"],
+        ["linkText=Dynamic Catalog", "linkText"],
+        ["css=#dynamic_catalog_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dynamic Catalog')]", "xpath:link"],
+        ["xpath=//a[@id='dynamic_catalog_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Dynamic Catalog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89cec058-e76c-4f09-8e45-c03ba3a30a3a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"dynamic-catalog-sidebar-link\"]",
+      "targets": [
+        ["css=*[data-test=\"dynamic-catalog-sidebar-link\"]", "css:data-attr"],
+        ["id=dynamic_catalog_sidebar_link", "id"],
+        ["linkText=Dynamic Catalog", "linkText"],
+        ["css=#dynamic_catalog_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dynamic Catalog')]", "xpath:link"],
+        ["xpath=//a[@id='dynamic_catalog_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Dynamic Catalog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48485c9-4745-410f-8baa-5f53a140e941",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=*[data-test=\"dynamic-catalog-sidebar-link\"]",
+      "targets": [
+        ["css=*[data-test=\"dynamic-catalog-sidebar-link\"]", "css:data-attr"],
+        ["id=dynamic_catalog_sidebar_link", "id"],
+        ["linkText=Dynamic Catalog", "linkText"],
+        ["css=#dynamic_catalog_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dynamic Catalog')]", "xpath:link"],
+        ["xpath=//a[@id='dynamic_catalog_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Dynamic Catalog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d453fd-131b-4b0f-9aaa-b0cf1c64f24b",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-burger-cross-btn",
+      "targets": [
+        ["id=react-burger-cross-btn", "id"],
+        ["css=#react-burger-cross-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-cross-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Close Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66bc2a2f-9330-4c12-a61b-659a9c9f2cca",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.shopping_cart_badge",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b608c07-ed4b-463f-98c1-11339391f340",
+    "name": "Suite_Regresion_Basica",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0f5f7fd5-e274-4906-bd97-837932e20cad", "e351ca4c-e966-4fc4-8795-d66aea874b12", "a5d013ee-5053-44b2-b4a3-a009982802b6"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
